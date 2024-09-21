@@ -12,7 +12,8 @@ print('*******************\n*******************')
 
 coffee = 5.00 
 muffins = 4.00
-
+scones = 3.00
+chai = 6.00
 # above gives a dollar amount to each menu item
 
 print('My Coffee and Muffin Shop Reciept')
@@ -20,9 +21,11 @@ print ('--------------------')
 
 coffeeprice = int(value1) * coffee
 muffinprice = int(value2) * muffins
-sub_total = coffeeprice + muffinprice
+sconeprice = int(value3) * scones
+chaiprice = int(value4) * chai
+sub_total = coffeeprice + muffinprice + sconeprice + chaiprice
 tax = 0.06 * sub_total 
-Total = coffeeprice + muffinprice + tax
+Total = coffeeprice + muffinprice + sconeprice + chaiprice + tax
 
 # above gives equations for all things displayed
 
@@ -31,6 +34,12 @@ print ("$",coffeeprice)
 \
 print (value2,"muffins at 4$ each:") 
 print ("$",muffinprice)
+
+print(value3,"Scones at 3$ each:")
+print("$",sconeprice)
+
+print(value4,"Chai at 6$ each:")
+print("$",chaiprice)
 
 print ("6% tax:")
 print ("$",'%.2f' %tax)
